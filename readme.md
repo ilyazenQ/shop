@@ -4,8 +4,8 @@
 Основная БД - postgres. <br>
 Кеш БД - redis. <br>
 Код БД в файле - script.sql <br>
-Диаграмма данных (файл images/BDDiagram.png): <br>
-<img src="images/DBDiagram.png" width="80%"> <br>
+Диаграмма данных (файл images/Diagram.png): <br>
+<img src="images/Diagram.png" width="80%"> <br>
 2. Медиаконтент. <br>
 Работу с медиаконтентом предлагаю делегировать объектному хранилищу с поддержкой S3 (VK Cloud Storage).<br>
 3. Обоснование. 

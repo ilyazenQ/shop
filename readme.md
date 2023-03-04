@@ -26,4 +26,4 @@
 Схема (файл images/schema.png): <br>
 <img src="images/schema.png" width="80%"> <br>
 ## III Прототип API
-Прототип API по оформлению заказа в директории src<br>
+Прототип API по оформлению заказа в директории src (Абстракции в Core/Abstraction, оформление заказа в OrderBundle)<br>

@@ -85,6 +85,11 @@ CREATE TABLE product_fields (
 CREATE INDEX IDX_product_fields_NAME ON product_fields(name);
 CREATE INDEX IDX_product_fields_value ON product_fields(value);
 
+-- Создание таблицы ролей пользователей
+CREATE TABLE user_role (
+                           id INT PRIMARY KEY,
+                           role VARCHAR(255) NOT NULL UNIQUE,
+);
 -- Создание таблицы пользователей
 CREATE TABLE users (
                        id INT PRIMARY KEY,
@@ -92,7 +97,10 @@ CREATE TABLE users (
                        password VARCHAR(255) NOT NULL,
                        name VARCHAR(50) NOT NULL,
                        phone VARCHAR(20) NOT NULL,
-                       address VARCHAR(255) NOT NULL
+                       address VARCHAR(255) NOT NULL,
+                       role_id  INT NOT NULL ,
+                       FOREIGN KEY (role_id) REFERENCES role(id)
+
 );
 
 CREATE INDEX IDX_users_NAME ON users(name);
